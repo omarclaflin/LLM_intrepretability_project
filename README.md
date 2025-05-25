@@ -41,9 +41,9 @@ Finally, stepped back, and tried a pipeline with variations:
   - all combinations were run
 - Also, used a simple linear model to ensemble features (only 8, because our sample set was only 50)
 - Note: Used RSA simply as feature identification, not for the classifier, although I was thinking about mapping that but the sparsity/smallness of data was too extreme compared to the feature size
-- **Result: Essentially, RSA > raw, SAE > layer activations, and, if using RSA, discriminative ~ categorical**
+- **Result: Essentially, RSA > raw, SAE > layer activations, and, if using RSA, discriminative ~< categorical**
   - Caveat: On a small dataset, one feature, small SAE, small model, small feature ensemble, etc.
-![Rough Summary](.llm_intrepretability_project\llm_intrepretability_project\results\SR_TOPIC_1_SUCCESS_CONTINUATION\combinatorial_analysis_20250525_012051\method_comparison_anlaysis.png)
+![Rough Summary](.\llm_intrepretability_project\llm_intrepretability_project\results\SR_TOPIC_1_SUCCESS_CONTINUATION\combinatorial_analysis_20250525_012051\method_comparison_anlaysis.png)
 
 ## Features
 
