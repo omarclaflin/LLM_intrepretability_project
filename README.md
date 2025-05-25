@@ -44,7 +44,7 @@ Finally, stepped back, and tried a pipeline with variations:
 - **Result: Essentially, RSA > raw, SAE > layer activations, and, if using RSA, discriminative ~< categorical**
   - Caveat: On a small dataset, one feature, small SAE, small model, small feature ensemble, etc.
 
-![Method Comparison Analysis](llm_intrepretability_project/llm_intrepretability_project/results/SR_TOPIC_1_SUCCESS_CONTINUATION/combinatorial_analysis_20250525_012051/method_comparison_anlaysis.png)
+![Method Comparison Analysis](llm_intrepretability_project/results/SR_TOPIC_1_SUCCESS_CONTINUATION/combinatorial_analysis_20250525_012051/method_comparison_analysis.png)
 
 ## Features
 
