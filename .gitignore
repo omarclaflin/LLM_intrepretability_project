@@ -1,3 +1,11 @@
+# Project stuff I added
+llm-venv
+models
+checkpoints
+config/api_config.json
+*.pt
+rsa_results_detailed.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

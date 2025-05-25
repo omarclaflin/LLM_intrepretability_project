@@ -1,0 +1,2 @@
+Accuracy
+The examples seem to be testing the accuracy or correctness of various factual statements, with some being true and others being false.

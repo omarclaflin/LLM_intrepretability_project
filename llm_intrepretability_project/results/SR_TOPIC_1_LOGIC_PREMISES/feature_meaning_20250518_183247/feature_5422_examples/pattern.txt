@@ -1,0 +1,2 @@
+Factual accuracy
+The examples demonstrate a pattern of statements that are either factually correct or contain inaccuracies, suggesting that the concept being detected is the factual accuracy of the information presented.
