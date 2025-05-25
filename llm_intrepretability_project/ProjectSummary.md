@@ -5,6 +5,8 @@
 
 This project compares different neural feature selection methodologies in large language models, specifically focusing on the intersection of **Representational Similarity Analysis (RSA)** and **Sparse Autoencoder (SAE)** interpretability techniques. The system systematically evaluates six different approaches to feature selection and analysis, providing empirical comparisons of their effectiveness for identifying semantically meaningful neural representations.
 
+If these results can be proved/enhanced on larger datasets, it shows that RSA approach to selecting features when trying to target them top-down with a stimulus-response set, is better than maximum activation approaches. It also shows that the SAE is a useful decomposition technique that enhances RSA techniques for this purpose. Finally, discriminative vs a categorical RSA approach may be superior, matching patterns seen in cognitive neuroscience research.
+
 ## Motivation
 
 Modern large language models contain millions of neurons and features, making it challenging to identify which representations are most relevant for specific semantic categories. While Sparse Autoencoders have emerged as a powerful tool for discovering interpretable features, and RSA provides methods for analyzing representational structure, there has been limited systematic comparison of how these approaches perform when combined or used independently. This project addresses that gap by implementing a combinatorial analysis framework.
@@ -208,6 +210,6 @@ This work establishes a foundation for more sophisticated interpretability resea
 
 While the initial results showed modest pattern discovery success, this project demonstrates the value of systematic, combinatorial approaches to neural interpretability research. The finding that RSA+SAE methods outperform simpler alternatives, even at small scale, suggests promising directions for larger-scale investigations. 
 
-- **Result: Essentially, RSA > raw, SAE > layer activations, and, if using RSA, discriminative ~ categorical**
+- **Result: Essentially, RSA > raw, SAE > layer activations, and, if using RSA, discriminative ~> categorical**
   - Caveat: On a small dataset, one feature, small SAE, small model, small feature ensemble, etc.
 ![Rough Summary](results/SR_TOPIC_1_SUCCESS_CONTINUATION/combinatorial_analysis_20250525_012051/method_comparison_analysis.png)

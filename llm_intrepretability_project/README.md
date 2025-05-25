@@ -1,12 +1,21 @@
 # LLM Interpretability Project
 
-This project focuses on understanding and analyzing the internal workings of Large Language Models (LLMs) through various interpretability techniques and tools.
+This project focuses on intrepretability of Large Language Models (LLMs) exploring some cognitive neuroscience approaches.
 
 ## Overview
 
-The project aims to provide insights into how LLMs process and generate text by examining their internal representations, attention patterns, and neuron activations. It includes tools for analyzing model behavior, visualizing attention patterns, and studying the role of individual neurons in the model's decision-making process.
+Essentially, I copied the Anthropic Monosemanticity blog/paper, and applied cog neuro technqiues. Ran into a lot of challenges using a personal computer and small model.
 
-Final project: ![ProjectSummary.md](ProjectSummary.md)
+## tl;dr
+
+I looked at different feature selection approaches that could improve LLM Intrepretability, and I found (caveat: with a very small dataset)
+1. RSA (representational similarity approaches) > maximum activation approaches, 
+2. SAE > raw layer activations, 
+3. and, if using RSA, discriminative > categorical
+
+These results were run on a small dataset, LLM, SAE, etc so very preliminary. However, if true, RSA > max makes sense as in cog neuro, we see this being more sensitive to capturing the geometry of activity over thresholding. SAE > raw layer, this makes sense as we basically leverage the Sparse Autoencoder as a decomposition/mapping method prior to analysis. Discrimniative > categorical, this also makes sense give the pattern seen in cog neuro (usually discriminaitive is used).
+
+Final project summary: ![ProjectSummary.md](ProjectSummary.md)
 
 ## Research Journey
 
@@ -41,7 +50,7 @@ Finally, stepped back, and tried a pipeline with variations:
   - all combinations were run
 - Also, used a simple linear model to ensemble features (only 8, because our sample set was only 50)
 - Note: Used RSA simply as feature identification, not for the classifier, although I was thinking about mapping that but the sparsity/smallness of data was too extreme compared to the feature size
-- **Result: Essentially, RSA > raw, SAE > layer activations, and, if using RSA, discriminative ~ categorical**
+- **Result: Essentially, RSA > raw, SAE > layer activations, and, if using RSA, discriminative ~> categorical**
   - Caveat: On a small dataset, one feature, small SAE, small model, small feature ensemble, etc.
 ![Method Comparison Analysis](results/SR_TOPIC_1_SUCCESS_CONTINUATION/combinatorial_analysis_20250525_012051/method_comparison_analysis.png)
 
