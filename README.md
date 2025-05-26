@@ -4,7 +4,7 @@ This project focuses on intrepretability of Large Language Models (LLMs) explori
 
 ## Overview
 
-Essentially, I copied the Anthropic Monosemanticity blog/paper, but tried targetting semantic concepts and hunting for features, along with applied cog neuro technqiues. Ran into a lot of challenges using a personal computer and small model.
+Essentially, I copied the Anthropic Monosemanticity blog/paper, but tried targetting semantic concepts and hunting for features (instead of semantic labelling on discovered features), along with applied cog neuro technqiues. Ran into a lot of challenges using a personal computer and small model.
 
 ## tl;dr
 
