@@ -5,6 +5,8 @@
 
 This project compares different neural feature selection methodologies in large language models, specifically focusing on the intersection of **Representational Similarity Analysis (RSA)** and **Sparse Autoencoder (SAE)** interpretability techniques. The system systematically evaluates six different approaches to feature selection and analysis, providing empirical comparisons of their effectiveness for identifying semantically meaningful neural representations.
 
+Typical SAE LLM approaches to feature identification rely on a bottom-up 'discovery' approach, and I was investigating top-down feature 'targetting' approach, that could serve as a complementary toolset once more developed.
+
 If these results can be proved/enhanced on larger datasets, it shows that RSA approach to selecting features when trying to target them top-down with a stimulus-response set, is better than maximum activation approaches. It also shows that the SAE is a useful decomposition technique that enhances RSA techniques for this purpose. Finally, discriminative vs a categorical RSA approach may be superior, matching patterns seen in cognitive neuroscience research.
 
 ## Motivation
