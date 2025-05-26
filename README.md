@@ -70,7 +70,7 @@ Finally, stepped back, and tried a *new* pipeline with variations:
 - Note: Used RSA simply as feature identification, not for the classifier, although I was thinking about mapping that but the sparsity/smallness of data was too extreme compared to the feature size
 - **Result: Essentially, RSA > raw, SAE > layer activations, and, if using RSA, discriminative ~> categorical**
   - Caveat: On a small dataset, one feature, small SAE, small model, small feature ensemble, etc.
-![Method Comparison Analysis](results/SR_TOPIC_1_SUCCESS_CONTINUATION/combinatorial_analysis_20250525_012051/method_comparison_analysis.png)
+![Method Comparison Analysis](llm_intrepretability/results/SR_TOPIC_1_SUCCESS_CONTINUATION/combinatorial_analysis_20250525_012051/method_comparison_analysis.png)
 
 
 ## Prerequisites
