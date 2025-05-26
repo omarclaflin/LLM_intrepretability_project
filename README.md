@@ -59,7 +59,7 @@ This didn't work well, so I tried:
 - didn't work, eventually dropping the concept for a more 'common' concept: success/achievement (vs failure)
 - eventually adding in a scoring mechanisms for the target (regardless of the pattern identified, which was also used to score as a confirmatory test)
   - e.g. we target 'success', ID feature, scan for that, ID the pattern and get "sequels", score and get some >2s back; but, now, we still score for our target (and may see a couple vaguely-related to 'success' scores)
-- retried with a 'left-first' windowing for RSA
+- retried with a 'left-first' windowing for RSA, matched token size of stim-response sets with the token size of the input dataset search step (~50/50, instead of 10/200)
 
 Finally, stepped back, and tried a *new* pipeline with variations:
 - Still: 1) Uses target concept, 2) ID features, 3) analyzes those features, 4) Scores
