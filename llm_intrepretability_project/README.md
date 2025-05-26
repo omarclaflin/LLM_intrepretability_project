@@ -28,11 +28,11 @@ In the future, I think we could quickly design stim-responses (multidimensional 
 ## Research Journey
 
 Set up notes:
-- I loaded llama so I could train an SAE. Tokenizer is specific for llama. Realized batch sizes have to be small given my GPU size.
-- For some reason, (I spent a lot of time), I couldn't access The Pile from my domain, so I used wiki-small. Later, realized how small that was, and went up in size.
-- Attemped Anthropics workflow (but in a top-down approach, starting with a dataset purportedly representing a feature to 'pick a feature') 
-      -Roughly, their workflow --> pick feature, scan large dataset for prompts that maximally activate that feature, token activation visualization, Claude API to 'feature ID' by finding a common pattern, text relevance scoring, clamping, some basic stats on token activations
-      -The demonstrative, rather than comprehensive statistical approach initially surprised me, but its very cool since artifical brain science is such a new field
+- I loaded llama so I could train an SAE. Tokenizer is specific for llama. Realized batch sizes have to be small given my GPU size.   
+- For some reason, (I spent a lot of time), I couldn't access The Pile from my domain, so I used wiki-small. Later, realized how small that was, and went up in size.   
+- Attemped Anthropics workflow (but in a top-down approach, starting with a dataset purportedly representing a feature to 'pick a feature')  
+      -Roughly, their workflow --> pick feature, scan large dataset for prompts that maximally activate that feature, token activation visualization, Claude API to 'feature ID' by finding a common pattern, text relevance scoring, clamping, some basic stats on token activations   
+      -The demonstrative, rather than comprehensive statistical approach initially surprised me, but its very cool since artifical brain science is such a new field  
 
 - Training the SAE: 
     - Copied the latest SAE blog post (regularization error terms, adam epsilon, etc) as closely as possible: ![https://transformer-circuits.pub/2024/april-update/index.html#training-saes](https://transformer-circuits.pub/2024/april-update/index.html#training-saes)
@@ -70,7 +70,7 @@ Finally, stepped back, and tried a *new* pipeline with variations:
 - Note: Used RSA simply as feature identification, not for the classifier, although I was thinking about mapping that but the sparsity/smallness of data was too extreme compared to the feature size
 - **Result: Essentially, RSA > raw, SAE > layer activations, and, if using RSA, discriminative ~> categorical**
   - Caveat: On a small dataset, one feature, small SAE, small model, small feature ensemble, etc.
-![Method Comparison Analysis](results/SR_TOPIC_1_SUCCESS_CONTINUATION/combinatorial_analysis_20250525_012051/method_comparison_analysis.png)
+![Method Comparison Analysis]llm_intrepretability_project/results/SR_TOPIC_1_SUCCESS_CONTINUATION/combinatorial_analysis_20250525_012051/method_comparison_analysis.png)
 
 
 ## Prerequisites
